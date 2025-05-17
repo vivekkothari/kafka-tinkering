@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "2.1.10"
     id("io.ktor.plugin") version "3.0.0"
     kotlin("plugin.serialization") version "2.1.10"
+    application
 }
 
 group = "com.github.vivekkothari.kafka"
@@ -25,9 +26,22 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+application {
+    mainClass.set("com.github.vivekkothari.kafka.KafkaProducerExample")
+}
+
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(23)
+}
+
+tasks.jar {
+    manifest {
+        attributes(
+            "Main-Class" to application.mainClass.get()
+        )
+    }
 }
