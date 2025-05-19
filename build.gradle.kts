@@ -17,7 +17,7 @@ dependencies {
     implementation("org.apache.kafka:kafka-streams:4.0.0")
     implementation("io.ktor:ktor-server-netty")
 
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.19.0")
 
     implementation("org.slf4j:slf4j-api:2.0.17")
     implementation("ch.qos.logback:logback-core:1.5.18")
