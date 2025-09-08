@@ -13,8 +13,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.apache.kafka:kafka-clients:4.0.0")
-    implementation("org.apache.kafka:kafka-streams:4.0.0")
+    implementation("org.apache.kafka:kafka-clients:4.1.0")
+    implementation("org.apache.kafka:kafka-streams:4.1.0")
     implementation("io.ktor:ktor-server-netty")
 
     implementation("com.fasterxml.jackson.core:jackson-databind:2.19.1")
