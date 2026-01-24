@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "2.2.21"
-    id("io.ktor.plugin") version "3.2.1"
+    id("io.ktor.plugin") version "3.4.0"
     kotlin("plugin.serialization") version "2.2.21"
     application
 }
@@ -20,7 +20,7 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.20.0")
 
     implementation("org.slf4j:slf4j-api:2.0.17")
-    implementation("ch.qos.logback:logback-core:1.5.18")
+    implementation("ch.qos.logback:logback-core:1.5.25")
     implementation("ch.qos.logback:logback-classic:1.5.18")
 
     testImplementation(kotlin("test"))
